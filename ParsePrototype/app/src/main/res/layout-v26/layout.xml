@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="8"
+            android:clickable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:text="@string/current_bid"
+            android:autofillHints="" />
+
+        <EditText
+            android:id="@+id/currentBid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number"
+            android:text="@string/initial_value"
+            android:autofillHints="" />
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/newBid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:hint="@string/bid_hint"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:autofillHints="" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:onClick="sendData"
+        android:text="@string/button_name"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/user_name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/user_name"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        android:autofillHints="" />
+
+
+</LinearLayout>
